@@ -1,6 +1,6 @@
 #Server Specifics
 server:
-  port: 8083    #port number
+  port: 8082    #port number
   
 spring:
   application:
@@ -15,7 +15,7 @@ eureka:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     serviceUrl:
-      defaultZone: http://127.0.0.1:8761/eureka/
+      defaultZone: https://eureka-server-v1.cfapps.io/eureka/
     healthcheck:
       enabled: true
     lease:
