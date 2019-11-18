@@ -1,0 +1,25 @@
+#Server Specifics
+server:
+  port: 8083    #port number
+  
+spring:
+  application:
+    name: student-service    #service name
+
+#Eureka Specifics
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+ 
+
+ 
