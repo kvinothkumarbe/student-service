@@ -1,6 +1,6 @@
 #Server Specifics
 server:
-  port: 8082    #port number
+  port: 8083    #port number
   
 spring:
   application:

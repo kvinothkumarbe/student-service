@@ -3,7 +3,6 @@ public class Student
 {
     private String name;
     private String className;
-    private String port;
      
     public Student(String name, String className) {
         super();
@@ -11,13 +10,6 @@ public class Student
         this.className = className;
     }
     
-    public Student(String name, String className,String port) {
-        super();
-        this.name = name;
-        this.className = className;
-        this.port=port;
-    }
- 
     public String getName() {
         return name;
     }
@@ -34,13 +26,6 @@ public class Student
         this.className = className;
     }
 
-	public String getPort() {
-		return port;
-	}
-
-	public void setPort(String port) {
-		this.port = port;
-	}
     
     
 }
